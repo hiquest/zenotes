@@ -1,0 +1,16 @@
+{
+  "name": "CozyNotesTab",
+  "version": "1.0.0",
+  "description": "Chrome extension with notes",
+  "main": "index.js",
+  "author": "Yanis <janis.sci@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf dist && webpack --bail --progress --profile",
+    "server": "webpack-dev-server --history-api-fallback --inline --progress",
+    "start": "npm run server"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.1"
+  }
+}
