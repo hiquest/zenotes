@@ -26,6 +26,10 @@ const config = {
       {
         test: /\.(json)$/,
         use: 'file-loader?name=[name].[ext]'
+      },
+      {
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ]
       }
     ]
   },
