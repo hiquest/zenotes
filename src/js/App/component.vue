@@ -3,13 +3,14 @@
   .row
     .column.column-20.sidebar
       h5.notes-title
-        span Notes
-        a(href='#') +
+        a(href='#' @click="addNote") +
       ul
-        li(v-for="note in notes") {{ title(note) }}
+        li(v-for="note in notes"
+        :class="{ active: note._selected }"
+        @click="selectNote(note)") {{ title(note) }}
     .column.column-80
       .note-area
-        h5 This is a note area
+        textarea#md-area
 </template>
 
 <script src="./index.js"></script>
