@@ -10,17 +10,18 @@
     list-style-type: none
     li
       cursor: pointer
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
     li:hover, li.active
       background: #f3f5f8;
 
 .sidebar
   border-right: 1px solid #eee
+  overflow-y: scroll;
 
 .notes-title
-  position: relative
   a
-    position: absolute
-    right: 0
     font-size: 26px
 
 .note-area

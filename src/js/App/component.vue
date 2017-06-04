@@ -1,16 +1,15 @@
 <template lang='pug'>
-.notes
-  .row
-    .column.column-20.sidebar
-      h5.notes-title
-        a(href='#' @click="addNote") +
-      ul
-        li(v-for="note in notes"
-        :class="{ active: note._selected }"
-        @click="selectNote(note)") {{ title(note) }}
-    .column.column-80
-      .note-area
-        textarea#md-area
+.notes.row
+  .column.column-20.sidebar
+    h5.notes-title
+      a(href='#' @click="addNote") +
+    ul
+      li(v-for="note in notes"
+      :key="note.id"
+      :class="{ active: note === selected }"
+      @click="selectNote(note)") {{ note.body }}
+  .column.column-80
+    editor(v-if='selected' v-model='selected.body' :key="selected.id")
 </template>
 
 <script src="./index.js"></script>
