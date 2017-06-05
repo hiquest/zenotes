@@ -1,11 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "Getting started example",
-  "description": "This extension shows a Google Image search result for the current page",
-  "version": "1.0",
-  "browser_action": {
-    "default_title": "Click here!"
-  },
+  "name": "Zenotes",
+  "description": "Replace the new tab page with clean, distraction-free notes",
+  "version": "1.1",
+  "browser_action": { },
   "chrome_url_overrides" : {
     "newtab": "index.html"
   },
