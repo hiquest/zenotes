@@ -3,7 +3,7 @@ import guid from '../utils/guid';
 const { chrome } = window;
 const SKEY = "COZY_NOTES";
 
-export default {
+const component = {
   data: () => {
     return {
       notes: [ ],
@@ -11,21 +11,31 @@ export default {
     };
   },
   mounted: function() {
+    const vm = this;
     loadNotes(this);
+    vm.$watch('selected', function(val, prev) {
+      if (!prev) return;
+      save(vm.notes);
+    }, {
+      deep: true
+    });
   },
   methods: { addNote, selectNote },
   watch: {
     notes: function() {
       save(this.notes);
-    },
-    "selected.body": function() {
-      save(this.notes);
     }
   }
 };
 
+export default component;
+
 function selectNote(note) {
+  if (note === this.selected) return;
   this.selected = note;
+
+  this.notes = this.notes.filter((note) => !!note.body);
+  save(this.notes);
 }
 
 function addNote() {

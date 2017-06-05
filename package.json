@@ -1,12 +1,11 @@
 {
-  "name": "CozyNotesTab",
+  "name": "Zenotes",
   "version": "1.0.0",
-  "description": "Chrome extension with notes",
+  "description": "Replace the new tab page with clean, distraction-free notes",
   "main": "index.js",
   "author": "Yanis <janis.sci@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rimraf dist && webpack --bail --progress --profile",
     "watch": "rimraf dist && webpack --progress --colors --watch",
     "start": "npm run watch"
   },
