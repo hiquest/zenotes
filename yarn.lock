@@ -80,8 +80,8 @@ anymatch@^1.3.0:
     micromatch "^2.1.5"
 
 aproba@^1.0.3:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/aproba/-/aproba-1.1.1.tgz#95d3600f07710aa0e9298c726ad5ecf2eacbabab"
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/aproba/-/aproba-1.1.2.tgz#45c6629094de4e96f693ef7eab74ae079c240fc1"
 
 are-we-there-yet@~1.1.2:
   version "1.1.4"
@@ -588,8 +588,8 @@ babel-types@^6.19.0, babel-types@^6.24.1:
     to-fast-properties "^1.0.1"
 
 babylon@^6.11.0, babylon@^6.15.0:
-  version "6.17.1"
-  resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.17.1.tgz#17f14fddf361b695981fe679385e4f1c01ebd86f"
+  version "6.17.2"
+  resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.17.2.tgz#201d25ef5f892c41bae49488b08db0dd476e9f5c"
 
 balanced-match@^0.4.1, balanced-match@^0.4.2:
   version "0.4.2"
@@ -714,10 +714,6 @@ browserslist@^1.3.6, browserslist@^1.5.2, browserslist@^1.7.6:
     caniuse-db "^1.0.30000639"
     electron-to-chromium "^1.2.7"
 
-buffer-shims@~1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/buffer-shims/-/buffer-shims-1.0.0.tgz#9978ce317388c649ad8793028c3477ef044a8b51"
-
 buffer-xor@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/buffer-xor/-/buffer-xor-1.0.3.tgz#26e61ed1422fb70dd42e6e36729ed51d855fe8d9"
@@ -774,8 +770,8 @@ caniuse-api@^1.5.2:
     lodash.uniq "^4.5.0"
 
 caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
-  version "1.0.30000676"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000676.tgz#82ea578237637c8ff34a28acaade373b624c4ea8"
+  version "1.0.30000677"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000677.tgz#13f421d40ae1434702103c494d2c4d716e2a8fcb"
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -1397,8 +1393,8 @@ fastparse@^1.1.1:
   resolved "https://registry.yarnpkg.com/fastparse/-/fastparse-1.1.1.tgz#d1e2643b38a94d7583b479060e6c4affc94071f8"
 
 file-loader@^0.11.1:
-  version "0.11.1"
-  resolved "https://registry.yarnpkg.com/file-loader/-/file-loader-0.11.1.tgz#6b328ee1234a729e4e47d36375dd6d35c0e1db84"
+  version "0.11.2"
+  resolved "https://registry.yarnpkg.com/file-loader/-/file-loader-0.11.2.tgz#4ff1df28af38719a6098093b88c82c71d1794a34"
   dependencies:
     loader-utils "^1.0.2"
 
@@ -2276,8 +2272,8 @@ no-case@^2.2.0:
     lower-case "^1.1.1"
 
 node-gyp@^3.3.1:
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/node-gyp/-/node-gyp-3.6.1.tgz#19561067ff185464aded478212681f47fd578cbc"
+  version "3.6.2"
+  resolved "https://registry.yarnpkg.com/node-gyp/-/node-gyp-3.6.2.tgz#9bfbe54562286284838e750eac05295853fa1c60"
   dependencies:
     fstream "^1.0.0"
     glob "^7.0.3"
@@ -2322,8 +2318,8 @@ node-libs-browser@^2.0.0:
     vm-browserify "0.0.4"
 
 node-pre-gyp@^0.6.29:
-  version "0.6.34"
-  resolved "https://registry.yarnpkg.com/node-pre-gyp/-/node-pre-gyp-0.6.34.tgz#94ad1c798a11d7fc67381b50d47f8cc18d9799f7"
+  version "0.6.36"
+  resolved "https://registry.yarnpkg.com/node-pre-gyp/-/node-pre-gyp-0.6.36.tgz#db604112cb74e0d477554e9b505b17abddfab786"
   dependencies:
     mkdirp "^0.5.1"
     nopt "^4.0.1"
@@ -2920,15 +2916,15 @@ pug-error@^1.3.2:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/pug-error/-/pug-error-1.3.2.tgz#53ae7d9d29bb03cf564493a026109f54c47f5f26"
 
-pug-filters@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/pug-filters/-/pug-filters-2.1.2.tgz#3590b41adb34749f71d3f1f1a9f745011119117b"
+pug-filters@^2.1.3:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/pug-filters/-/pug-filters-2.1.3.tgz#d59767a220de797dd755489f66834cf9aa83aa54"
   dependencies:
     clean-css "^3.3.0"
     constantinople "^3.0.1"
     jstransformer "1.0.0"
     pug-error "^1.3.2"
-    pug-walk "^1.1.2"
+    pug-walk "^1.1.3"
     resolve "^1.1.6"
     uglify-js "^2.6.1"
 
@@ -2940,23 +2936,23 @@ pug-lexer@^3.1.0:
     is-expression "^3.0.0"
     pug-error "^1.3.2"
 
-pug-linker@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/pug-linker/-/pug-linker-3.0.0.tgz#2416f06aaa1a9720e3b3261d1e8ca72f6f5123d2"
+pug-linker@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/pug-linker/-/pug-linker-3.0.1.tgz#ba3f8ff213ca8f3a304859b44fed13ca7b9dfa19"
   dependencies:
     pug-error "^1.3.2"
-    pug-walk "^1.1.2"
+    pug-walk "^1.1.3"
 
-pug-load@^2.0.6:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/pug-load/-/pug-load-2.0.6.tgz#86da4b31c4f76fd9a471982b9b3d00e6c8a3f945"
+pug-load@^2.0.7:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/pug-load/-/pug-load-2.0.7.tgz#531d0c6e11546010e984630d03df406367d2de77"
   dependencies:
     object-assign "^4.1.0"
-    pug-walk "^1.1.2"
+    pug-walk "^1.1.3"
 
-pug-parser@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/pug-parser/-/pug-parser-2.0.2.tgz#53a680cfd05039dcb0c27d029094bc4a792689b0"
+pug-parser@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/pug-parser/-/pug-parser-3.0.0.tgz#37c619dd800f642187ce4d6ce1a164cdd75487a3"
   dependencies:
     pug-error "^1.3.2"
     token-stream "0.0.1"
@@ -2971,20 +2967,20 @@ pug-strip-comments@^1.0.2:
   dependencies:
     pug-error "^1.3.2"
 
-pug-walk@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/pug-walk/-/pug-walk-1.1.2.tgz#debb24c070a95d5fc2aebf3589261833d2332e3b"
+pug-walk@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/pug-walk/-/pug-walk-1.1.3.tgz#d7cd5b23db3ca87c636c86a0973f9cd8e030436c"
 
 pug@^2.0.0-rc.1:
-  version "2.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/pug/-/pug-2.0.0-rc.1.tgz#723c08b3349bb9b96865b9ed7d3e379e247cd984"
+  version "2.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/pug/-/pug-2.0.0-rc.2.tgz#07845527790ab2c6be67dcf5eb1f31804081f04a"
   dependencies:
     pug-code-gen "^1.1.1"
-    pug-filters "^2.1.2"
+    pug-filters "^2.1.3"
     pug-lexer "^3.1.0"
-    pug-linker "^3.0.0"
-    pug-load "^2.0.6"
-    pug-parser "^2.0.2"
+    pug-linker "^3.0.1"
+    pug-load "^2.0.7"
+    pug-parser "^3.0.0"
     pug-runtime "^2.0.3"
     pug-strip-comments "^1.0.2"
 
@@ -3027,8 +3023,10 @@ randomatic@^1.1.3:
     kind-of "^3.0.2"
 
 randombytes@^2.0.0, randombytes@^2.0.1:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/randombytes/-/randombytes-2.0.3.tgz#674c99760901c3c4112771a31e521dc349cc09ec"
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/randombytes/-/randombytes-2.0.4.tgz#9551df208422c8f80eb58e2326dd0b840ff22efd"
+  dependencies:
+    safe-buffer "^5.0.1"
 
 rc@^1.1.7:
   version "1.2.1"
@@ -3064,14 +3062,14 @@ readable-stream@1.0:
     string_decoder "~0.10.x"
 
 readable-stream@^2.0.1, readable-stream@^2.0.2, readable-stream@^2.0.5, readable-stream@^2.0.6, readable-stream@^2.1.4, readable-stream@^2.2.6:
-  version "2.2.9"
-  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.2.9.tgz#cf78ec6f4a6d1eb43d26488cac97f042e74b7fc8"
+  version "2.2.10"
+  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.2.10.tgz#effe72bb7c884c0dd335e2379d526196d9d011ee"
   dependencies:
-    buffer-shims "~1.0.0"
     core-util-is "~1.0.0"
     inherits "~2.0.1"
     isarray "~1.0.0"
     process-nextick-args "~1.0.6"
+    safe-buffer "^5.0.1"
     string_decoder "~1.0.0"
     util-deprecate "~1.0.1"
 
@@ -3251,8 +3249,8 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     inherits "^2.0.1"
 
 safe-buffer@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.0.1.tgz#d263ca54696cd8a306b5ca6551e92de57918fbe7"
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.0.tgz#fe4c8460397f9eaaaa58e73be46273408a45e223"
 
 sass-graph@^2.1.1:
   version "2.2.4"
@@ -3482,8 +3480,8 @@ strip-json-comments@~2.0.1:
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
 
 style-loader@^0.18.1:
-  version "0.18.1"
-  resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-0.18.1.tgz#6afca8953c842830e5e2dc84796309880a97f7e8"
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-0.18.2.tgz#cc31459afbcd6d80b7220ee54b291a9fd66ff5eb"
   dependencies:
     loader-utils "^1.0.2"
     schema-utils "^0.3.0"
@@ -3590,15 +3588,15 @@ typo-js@*:
   resolved "https://registry.yarnpkg.com/typo-js/-/typo-js-1.0.3.tgz#54d8ebc7949f1a7810908b6002c6841526c99d5a"
 
 uglify-js@3.0.x:
-  version "3.0.13"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.0.13.tgz#1871d736aa1e550c728d7e5a6556579e70925d68"
+  version "3.0.15"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.0.15.tgz#aacb323a846b234602270dead8a32441a8806f42"
   dependencies:
     commander "~2.9.0"
     source-map "~0.5.1"
 
 uglify-js@^2.6.1, uglify-js@^2.8.27:
-  version "2.8.27"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-2.8.27.tgz#47787f912b0f242e5b984343be8e35e95f694c9c"
+  version "2.8.28"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-2.8.28.tgz#e335032df9bb20dcb918f164589d5af47f38834a"
   dependencies:
     source-map "~0.5.1"
     yargs "~3.10.0"
