@@ -24,7 +24,7 @@ const config = {
         use: 'babel-loader'
       },
       {
-        test: /\.(json)$/,
+        test: /\.(json|png)$/,
         use: 'file-loader?name=[name].[ext]'
       },
       {

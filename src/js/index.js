@@ -1,4 +1,8 @@
+// Resources
 require("../manifest.json");
+require("../icons/128.png");
+require("../icons/48.png");
+
 require("normalize.css");
 require("milligram");
 require("simplemde/dist/simplemde.min.css");

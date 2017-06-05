@@ -10,7 +10,9 @@ export default {
       selected: undefined
     };
   },
-  mounted,
+  mounted: function() {
+    loadNotes(this);
+  },
   methods: { addNote, selectNote },
   watch: {
     notes: function() {
@@ -28,7 +30,7 @@ function selectNote(note) {
 
 function addNote() {
   const note = { id: guid(), body: '#' };
-  this.notes.push(note);
+  this.notes.unshift(note);
   this.selectNote(note);
 }
 
@@ -37,9 +39,9 @@ function save(notes) {
   chrome.storage.sync.set({[SKEY]: notes});
 }
 
-function mounted() {
+function loadNotes(vm) {
   chrome.storage.sync.get(SKEY, ({ [SKEY]: list = [] }) => {
-    this.notes.push(...list);
-    this.selectNote(list[0]);
+    vm.notes.push(...list);
+    vm.selectNote(list[0]);
   });
 }
