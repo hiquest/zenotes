@@ -18,7 +18,6 @@ function mounted() {
 function initEditor(el, val) {
   return new SimpleMDE({
     element: el,
-    autofocus: true,
     spellChecker: false,
     placeholder: "Type here...",
     toolbar: false,
