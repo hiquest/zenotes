@@ -2,8 +2,21 @@
 
 Clean, distraction-free notes for Chrome. [Install it here](https://chrome.google.com/webstore/detail/zenotes/fphoofpcklpbccekhlcmhagpbddbkfdp?authuser=1).
 
-This is a test Chrome extension I made to be able to store my notes somewhere. Is is heavily inspired by apps like [Simplenote](https://simplenote.com/).
+![Zenotes](https://dl.dropboxusercontent.com/content_link/RMsyYH1cwdXHxzZpoKJz205UfOmRfyRIF9XCycsd29d51frrdRfH1yiM31cPMAKy/file)
 
-Built with [Vue.js](https://vuejs.org/). It is using `chrome.storage.sync` API to store data (which means the data is synced between all devices).
+## What is that?
 
-![Zenotes](https://lh3.googleusercontent.com/5FCBpbJt-eh_53AABfbw023asLAtsRTrsanpL4C3_3-hbNeFwjRhvApEuc7QzUQadb9PAn2cfQ=s1280-h800-e365-rw)
+This is a simple Chrome extension I made to be able to store my notes somewhere. Is is heavily inspired by apps like [Simplenote](https://simplenote.com/).
+
+## What it's made of
+
+- Built with [Vue.js](https://vuejs.org/)
+- It is using `chrome.storage.sync` API to store data (which means the data is synced between all devices)
+- [Milligram](https://milligram.github.io/) for basic styling
+- [sparksuite/simplemde-markdown-editor](https://github.com/sparksuite/simplemde-markdown-editor) for Markdown support
+
+## How to Build?
+
+```bash
+  yarn start
+```
