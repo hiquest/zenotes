@@ -31,6 +31,7 @@
   padding-left: 20px
   height: 100%
   overflow-y: scroll
+  position: absolute
 
 .CodeMirror
   border: 0
@@ -38,3 +39,15 @@
 
 .cm-header, .cm-strong
   font-weight: 300
+
+// Transitions
+
+.fade-enter-active, .fade-leave-active
+  transition: opacity .2s ease-in, transform .2s ease-in
+
+.fade-enter, .fade-leave-to
+  opacity: 0
+  transform: translateY(-30px)
+
+.flip-list-move
+  transition: transform 0.2s
