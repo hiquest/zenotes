@@ -7,6 +7,8 @@ export default {
 
 function mounted() {
   const md = initEditor(this.$el.childNodes[0], this.value);
+  md.codemirror.focus();
+  md.codemirror.setCursor(100);
   md.codemirror.on("change", () => {
     const val = this.md.value();
     this.$emit('input', val);
