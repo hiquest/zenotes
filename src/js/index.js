@@ -14,6 +14,6 @@ import Editor from './Editor/component.vue';
 Vue.component('editor', Editor);
 
 new Vue({
-  el: 'main',
+  el: 'body',
   render: h => h(App)
 });

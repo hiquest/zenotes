@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
@@ -15,13 +14,17 @@ const config = {
         loader: 'vue-loader',
         options: {
           loaders: {
+            js: 'babel-loader?presets[]=es2015'
           }
-          // other vue-loader options go here
         }
       },
       {
-        test: /\.(js|jsx)$/,
-        use: 'babel-loader'
+        test: /\.js$/,
+        exclude: [/node_modules/],
+        use: [{
+          loader: 'babel-loader',
+          options: { presets: ['es2015'] },
+        }],
       },
       {
         test: /\.(json|png)$/,
@@ -34,8 +37,7 @@ const config = {
     ]
   },
   plugins: [
-    // new webpack.optimize.UglifyJsPlugin(),
-    new HtmlWebpackPlugin({template: './src/tab.html'})
+    new HtmlWebpackPlugin({ title: "New Tab | Zenotes" })
   ]
 };
 
