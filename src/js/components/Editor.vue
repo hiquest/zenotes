@@ -1,3 +1,9 @@
+<template lang='pug'>
+  .note-area
+    textarea
+</template>
+
+<script>
 import SimpleMDE from 'simplemde';
 
 export default {
@@ -29,5 +35,5 @@ function initEditor(el, val) {
     forceSync: true,
     initialValue: val
   });
-
 }
+</script>
