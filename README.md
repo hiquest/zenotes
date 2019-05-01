@@ -2,7 +2,7 @@
 
 Clean, distraction-free notes for Chrome. [Install it here](https://chrome.google.com/webstore/detail/zenotes/fphoofpcklpbccekhlcmhagpbddbkfdp?authuser=1).
 
-![Zenotes](https://www.dropbox.com/s/pjdvyxuagpd47u7/zenotes-screen.png?dl=1)
+![Zenotes](media/screen.jpg)
 
 ## What is that?
 
