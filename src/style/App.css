@@ -1,0 +1,72 @@
+.notes {
+  position: absolute;
+  top: 50px;
+  bottom: 50px;
+  left: calc(50% - 400px);
+  width: 800px;
+}
+
+.notes .row {
+  height: 100%;
+}
+
+.notes .row ul {
+  list-style-type: none;
+}
+
+.notes .row ul li {
+  cursor: pointer;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 3px 5px;
+  margin-bottom: 0;
+  min-height: 31px;
+}
+
+.notes .row li:hover,
+.notes .row li.active {
+  background: #f3f5f8;
+}
+
+.sidebar {
+  border-right: 1px solid #eee;
+  overflow-y: scroll;
+}
+
+.notes-title a {
+  font-size: 26px;
+}
+
+.note-area {
+  padding-left: 20px;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  position: absolute;
+}
+
+.CodeMirror {
+  border: 0;
+  padding-top: 0;
+}
+
+.cm-header,
+.cm-strong {
+  font-weight: 300;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.flip-list-move {
+  transition: transform 0.2s;
+}

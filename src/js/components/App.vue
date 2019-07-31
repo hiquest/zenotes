@@ -1,17 +1,19 @@
-<template lang='pug'>
-body
-  .notes.row
-    .column.column-20.sidebar
-      h5.notes-title
-        a(href='#' @click="addNote") +
-      transition-group(name="flip-list" tag="ul")
-        li(v-for="note in notes"
-        :key="note.id"
-        :class="{ active: note === selected }"
-        @click="selectNote(note)") {{ note.body }}
-    .column.column-80(style='position: relative')
-      transition(name="fade" appear)
-        editor(v-if='selected' v-model='selected.body' :key="selected.id")
+<template lang='html'>
+  <body>
+      <div class="notes row">
+          <div class="column column-20 sidebar">
+              <h5 class="notes-title"><a href="#" @click="addNote">+</a></h5>
+              <transition-group name="flip-list" tag="ul">
+                  <li v-for="note in notes" :key="note.id" :class="{ active: note === selected }" @click="selectNote(note)">{{ note.body }}</li>
+              </transition-group>
+          </div>
+          <div class="column column-80" style="position: relative;">
+              <transition name="fade" appear="appear">
+                  <editor v-if="selected" v-model="selected.body" :key="selected.id"></editor>
+              </transition>
+          </div>
+      </div>
+  </body>
 </template>
 
 <script>
@@ -82,5 +84,4 @@ function loadNotes(vm) {
   });
 }
 </script>
-
-<style src="../../style/App.sass" lang='sass'></style>
+<style src="../../style/App.css" lang='css'></style>

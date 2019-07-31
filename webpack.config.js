@@ -1,44 +1,48 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
+var MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
-const config = {
+module.exports = {
   entry: './src/js/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'app.js'
   },
+  mode: 'production',
   module: {
     rules: [
       {
         test: /\.vue$/,
-        loader: 'vue-loader',
-        options: {
-          loaders: {
-            js: 'babel-loader?presets[]=es2015'
-          }
-        }
+        loader: 'vue-loader'
       },
       {
         test: /\.js$/,
-        exclude: [/node_modules/],
-        use: [{
-          loader: 'babel-loader',
-          options: { presets: ['es2015'] },
-        }],
-      },
-      {
-        test: /\.(json|png)$/,
-        use: 'file-loader?name=[name].[ext]'
+        loader: 'babel-loader'
       },
       {
         test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
-      }
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader'
+        ]
+      },
+      {
+        test: /\.(png)$/,
+        loader: 'file-loader?name=[name].[ext]'
+      },
+      {
+        test: /\.(json)$/,
+        type: 'javascript/auto',
+        loader: 'file-loader?name=[name].[ext]'
+      },
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({ title: "New Tab | Zenotes" })
+    new VueLoaderPlugin(),
+    new MiniCssExtractPlugin({
+      filename: 'style.css'
+    }),
+    new HtmlWebpackPlugin(),
   ]
-};
-
-module.exports = config;
+}
