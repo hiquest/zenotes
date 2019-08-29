@@ -1,5 +1,7 @@
 # zenotes
 
+Just An Update Here
+
 Clean, distraction-free notes for Chrome. [Install it here](https://chrome.google.com/webstore/detail/zenotes/fphoofpcklpbccekhlcmhagpbddbkfdp?authuser=1).
 
 ![Zenotes](media/screen.jpg)
