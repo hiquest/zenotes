@@ -1,12 +1,14 @@
-# zenotes
+# 🧘‍♀️ Zenotes
 
-Clean, distraction-free notes for Chrome. [Install it here](https://chrome.google.com/webstore/detail/zenotes/fphoofpcklpbccekhlcmhagpbddbkfdp?authuser=1).
+A clean, distraction-free notes for Chrome.
+
+[Install it here](https://chrome.google.com/webstore/detail/zenotes/fphoofpcklpbccekhlcmhagpbddbkfdp?authuser=1).
 
 ![Zenotes](media/screen.jpg)
 
 ## What is that?
 
-This is a simple Chrome extension I made to be able to store my notes somewhere. Is is heavily inspired by apps like [Simplenote](https://simplenote.com/).
+A simple Chrome extension I made to be able to store my notes somewhere. Is is heavily inspired by apps like [Simplenote](https://simplenote.com/).
 
 ## What it's made of
 
@@ -18,5 +20,5 @@ This is a simple Chrome extension I made to be able to store my notes somewhere.
 ## How to Build?
 
 ```bash
-  yarn start
+  npm start
 ```

@@ -6,15 +6,15 @@
   width: 800px;
 }
 
-.notes .row {
+.notes {
   height: 100%;
 }
 
-.notes .row ul {
+.notes ul {
   list-style-type: none;
 }
 
-.notes .row ul li {
+.notes ul li {
   cursor: pointer;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -24,8 +24,8 @@
   min-height: 31px;
 }
 
-.notes .row li:hover,
-.notes .row li.active {
+.notes li:hover,
+.notes li.active {
   background: #f3f5f8;
 }
 
